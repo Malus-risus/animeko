@@ -748,7 +748,7 @@ jobs:
   release_github-macos-13:
     name: 'macOS 13 x86_64 (GitHub)'
     runs-on:
-    - 'macos-13'
+    - 'macos-15'
     needs:
     - 'create-release'
     steps:
