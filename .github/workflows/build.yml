@@ -72,7 +72,7 @@ jobs:
       run: 'python .github/workflows/download_jbr.py'
     - id: 'step-4'
       name: 'Setup JBR 21 for Windows'
-      uses: 'gmitch215/setup-java@6d2c5e1f82f180ae79f799f0ed6e3e5efb4e664d'
+      uses: 'gmitch215/setup-java@051967de707ab6cb4fdc9259b1b316750566fcee'
       with:
         java-version: '21'
         distribution: 'jdkfile'
@@ -242,7 +242,7 @@ jobs:
       run: 'python .github/workflows/download_jbr.py'
     - id: 'step-6'
       name: 'Setup JBR 21 for Ubuntu'
-      uses: 'gmitch215/setup-java@6d2c5e1f82f180ae79f799f0ed6e3e5efb4e664d'
+      uses: 'gmitch215/setup-java@051967de707ab6cb4fdc9259b1b316750566fcee'
       with:
         java-version: '21'
         distribution: 'jdkfile'
@@ -725,7 +725,7 @@ jobs:
       if: '${{ steps.step-5.outcome == ''failure'' }}'
     - id: 'step-7'
       name: 'Setup JBR 21 for macOS '
-      uses: 'gmitch215/setup-java@6d2c5e1f82f180ae79f799f0ed6e3e5efb4e664d'
+      uses: 'gmitch215/setup-java@051967de707ab6cb4fdc9259b1b316750566fcee'
       with:
         java-version: '21'
         distribution: 'jdkfile'
@@ -924,7 +924,7 @@ jobs:
       if: '${{ steps.step-4.outcome == ''failure'' }}'
     - id: 'step-6'
       name: 'Setup JBR 21 for macOS '
-      uses: 'gmitch215/setup-java@6d2c5e1f82f180ae79f799f0ed6e3e5efb4e664d'
+      uses: 'gmitch215/setup-java@051967de707ab6cb4fdc9259b1b316750566fcee'
       with:
         java-version: '21'
         distribution: 'jdkfile'
