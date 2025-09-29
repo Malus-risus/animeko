@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.1.21"
+kotlin = "2.2.20"
 android-gradle-plugin = "8.9.2"
 
 ### KOTLINX ###
