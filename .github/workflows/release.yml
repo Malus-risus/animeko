@@ -1065,7 +1065,7 @@ jobs:
     - id: 'step-16'
       name: 'Prepare signing key'
       continue-on-error: true
-      uses: 'timheuer/base64-to-file@v1.1'
+      uses: 'timheuer/base64-to-file@v1.2'
       with:
         fileName: 'android_signing_key'
         fileDir: './'
