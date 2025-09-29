@@ -42,7 +42,7 @@ jobs:
   build_github-windows-2022:
     name: 'Build (Windows Server 2019 x86_64)'
     runs-on:
-    - 'windows-2022'
+    - 'windows-2025'
     permissions:
       actions: 'write'
     steps:
@@ -1224,7 +1224,7 @@ jobs:
   verify_github-windows-2022:
     name: 'Verify (Windows Server 2022 x86_64 (GitHub))'
     runs-on:
-    - 'windows-2022'
+    - 'windows-2025'
     permissions:
       actions: 'read'
     needs:
