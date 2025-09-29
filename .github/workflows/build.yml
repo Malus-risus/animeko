@@ -1178,14 +1178,14 @@ jobs:
     - id: 'step-2'
       name: 'Download Windows x64 Portable (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
     - id: 'step-3'
       name: 'Download Windows x64 Portable (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
@@ -1193,7 +1193,7 @@ jobs:
     - id: 'step-4'
       name: 'Download Windows x64 Portable (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
@@ -1243,14 +1243,14 @@ jobs:
     - id: 'step-2'
       name: 'Download Windows x64 Portable (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
     - id: 'step-3'
       name: 'Download Windows x64 Portable (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
@@ -1258,7 +1258,7 @@ jobs:
     - id: 'step-4'
       name: 'Download Windows x64 Portable (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-windows-portable'
         path: '${{ github.workspace }}/ci-helper/verify'
@@ -1303,20 +1303,20 @@ jobs:
     - id: 'step-1'
       name: 'Download DMG (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
     - id: 'step-2'
       name: 'Download DMG (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-1.outcome == ''failure'' }}'
     - id: 'step-3'
       name: 'Download DMG (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-2.outcome == ''failure'' }}'
@@ -1362,20 +1362,20 @@ jobs:
     - id: 'step-2'
       name: 'Download DMG (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
     - id: 'step-3'
       name: 'Download DMG (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-2.outcome == ''failure'' }}'
     - id: 'step-4'
       name: 'Download DMG (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-3.outcome == ''failure'' }}'
@@ -1421,20 +1421,20 @@ jobs:
     - id: 'step-2'
       name: 'Download DMG (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
     - id: 'step-3'
       name: 'Download DMG (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-2.outcome == ''failure'' }}'
     - id: 'step-4'
       name: 'Download DMG (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-macos-dmg-aarch64'
       if: '${{ steps.step-3.outcome == ''failure'' }}'
@@ -1472,14 +1472,14 @@ jobs:
     - id: 'step-1'
       name: 'Download Linux x64 AppImage (Attempt #1)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-linux-appimage-x64'
         path: '${{ github.workspace }}/ci-helper/verify'
     - id: 'step-2'
       name: 'Download Linux x64 AppImage (Attempt #2)'
       continue-on-error: true
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-linux-appimage-x64'
         path: '${{ github.workspace }}/ci-helper/verify'
@@ -1487,7 +1487,7 @@ jobs:
     - id: 'step-3'
       name: 'Download Linux x64 AppImage (Attempt #3)'
       continue-on-error: false
-      uses: 'actions/download-artifact@v4'
+      uses: 'actions/download-artifact@v5'
       with:
         name: 'ani-linux-appimage-x64'
         path: '${{ github.workspace }}/ci-helper/verify'
