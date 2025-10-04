@@ -84,7 +84,7 @@ jobs:
       run: 'echo "jvm.toolchain.version=21" >> local.properties'
     - id: 'step-6'
       name: 'Setup Gradle'
-      uses: 'gradle/actions/setup-gradle@v3'
+      uses: 'gradle/actions/setup-gradle@v5'
       with:
         cache-disabled: 'true'
     - id: 'step-7'
@@ -256,7 +256,7 @@ jobs:
       run: 'chmod -R 777 .'
     - id: 'step-9'
       name: 'Setup Gradle'
-      uses: 'gradle/actions/setup-gradle@v3'
+      uses: 'gradle/actions/setup-gradle@v5'
       with:
         cache-disabled: 'true'
     - id: 'step-10'
@@ -739,7 +739,7 @@ jobs:
       run: 'chmod -R 777 .'
     - id: 'step-10'
       name: 'Setup Gradle'
-      uses: 'gradle/actions/setup-gradle@v3'
+      uses: 'gradle/actions/setup-gradle@v5'
       with:
         cache-disabled: 'true'
     - id: 'step-11'
@@ -938,7 +938,7 @@ jobs:
       run: 'chmod -R 777 .'
     - id: 'step-9'
       name: 'Setup Gradle'
-      uses: 'gradle/actions/setup-gradle@v3'
+      uses: 'gradle/actions/setup-gradle@v5'
       with:
         cache-disabled: 'true'
     - id: 'step-10'
