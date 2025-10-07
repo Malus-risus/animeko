@@ -625,7 +625,7 @@ jobs:
   build_github-macos-13:
     name: 'Build (macOS 13 x86_64 (GitHub))'
     runs-on:
-    - 'macos-13'
+    - 'macos-15'
     permissions:
       actions: 'write'
     steps:
@@ -1342,7 +1342,7 @@ jobs:
   verify_github-macos-14:
     name: 'Verify (macOS 14 AArch64 (GitHub))'
     runs-on:
-    - 'macos-14'
+    - 'macos-15'
     permissions:
       actions: 'read'
     needs:
