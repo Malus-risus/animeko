@@ -76,7 +76,7 @@ jobs:
   release_github-windows-2022:
     name: 'Windows Server 2019 x86_64'
     runs-on:
-    - 'windows-2022'
+    - 'windows-2025'
     needs:
     - 'create-release'
     steps:
