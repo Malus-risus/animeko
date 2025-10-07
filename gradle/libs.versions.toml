@@ -18,7 +18,7 @@ paging = "3.3.6" # https://developer.android.com/jetpack/androidx/releases/pagin
 datastore = "1.1.7" # https://developer.android.com/jetpack/androidx/releases/datastore
 ksp = "2.1.21-2.0.1" # https://github.com/google/ksp/releases
 # note: room 2.7.0-rc01 cannot compile
-room = "2.7.1" # https://developer.android.com/jetpack/androidx/releases/room#declaring_dependencies
+room = "2.8.1" # https://developer.android.com/jetpack/androidx/releases/room#declaring_dependencies
 sentry-kotlin-multiplatform = "0.19.0"
 sqlite = "2.5.0"
 androidx-activity = "1.10.1"
